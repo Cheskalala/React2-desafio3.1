@@ -24,11 +24,15 @@ const Buscador = () => {
   };
 
   return (
-    <div className="pokemon-dropdown-container">
-      <label htmlFor="pokemonSelect">Selecciona un Pokémon:</label>
+    <div className="container ">
+      <div className='mt-5 pt-5 text-center'>
+        <div className='mt-5 pb-5 text-center'>
+<label  htmlFor="pokemonSelect">Selecciona un Pokémon:</label>
+        </div>
+        <div className='w-25 mx-auto'>
       <select
         id="pokemonSelect"
-        className="pokemon-dropdown"
+        className="form-select "
         onChange={handleSelectChange}
         disabled={loadingNames || loading}
       >
@@ -49,6 +53,11 @@ const Buscador = () => {
           </>
         )}
       </select>
+        </div>
+      </div>
+      
+      
+
     </div>
   );
 }

@@ -9,23 +9,27 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const App =() => {
 
   return (
-		<div>
-			<Navbar />
+		<div className='text-white '>
+			<div className=' bg-warning container-fluid'>
 
+			<Navbar/>
+			</div>
+			<div className=''>
 			<Routes>
 				<Route
 					path="/"
 					element={<Home />}
-				/>
+					/>
 				<Route
 					path="/buscador"
 					element={<Buscador />}
-				/>
+					/>
 				<Route 
 					path="/pokemon/:pokemonId" 
 					element={<PokemonInfo />} 
-				/>
+					/>
 			</Routes>
+			</div>
 		</div>
   )
 }

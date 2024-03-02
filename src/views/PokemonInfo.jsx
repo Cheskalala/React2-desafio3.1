@@ -26,7 +26,7 @@ const PokemonInfo = () => {
   }
 
   return (
-    <div className="pokemon-info">
+    <div className="pokemon-info position-absolute top-50 start-50 translate-middle">
       <h2 className="pokemon-name">{pokemonId}</h2>
       <img className="pokemon-img" src={pokemonInfo.sprites?.front_default} alt={pokemonId} />
       <h3>{pokemonInfo.types[0].type.name}</h3>
